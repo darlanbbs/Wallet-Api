@@ -26,7 +26,7 @@ return await AuthRepository.generateToken(user._id)
 
 
 async function userLogged(id){
-    console.log("Esse é o id" + id)
+  
 const user = await AuthRepository.findById(id)
 if(!user) throw new Error('User not found')
 return user
